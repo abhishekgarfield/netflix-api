@@ -98,6 +98,9 @@ app.get("/user", async (req, res) => {
   }
 });
 
+app.get("/test",(req,res)=>{
+  res.send("say hello");
+})
 app.get("/getgeneres", async (req, res) => {
   console.log("geners");
   const client = new MongoClient(uri);
