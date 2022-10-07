@@ -8,8 +8,8 @@ const jwt = require("jsonwebtoken");
 app.use(cors());
 require("dotenv").config();
 var MongoClient = require("mongodb").MongoClient;
-var uri = process.env.uri;
-const port = process.env.Port;
+var uri = "mongodb+srv://abhishek:1234@cluster0.hzml3ge.mongodb.net/?retryWrites=true&w=majority";
+const port = process.env.PORT || 3000;
 
 app.post("/signup", async (req, res) => {
   console.log("signup");
